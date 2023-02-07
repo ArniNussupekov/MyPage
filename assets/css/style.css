@@ -1,0 +1,540 @@
+body{
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(34, 32, 32);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(49, 47, 47);    
+    border-radius: 20px;       
+    border: rgb(99, 92, 92) 2px solid ;  
+  }
+
+*{
+   margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+          /* hedaer */
+.header{
+    background-color: rgb(66, 60, 60);
+    padding: 20px 15px;
+    width: 100%;
+    color: white;
+    align-items: center;
+}
+
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoL {
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.headLinks {
+    color: white;
+    font-size: 20px;
+    box-shadow: inset;
+}
+
+.HeadB {
+    background-color: rgb(71, 71, 71);
+    border: 2px solid rgb(17, 16, 16);
+    border-radius: 30px;
+    padding: 4px 10px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px  rgb(0, 0, 0);
+}
+.HeadB:hover{
+    box-shadow: 0px 0px 0px rgb(0, 0, 0);
+    padding: 5px 12px;
+}
+
+#Hba{
+    background-color: rgb(71, 71, 71);
+    border: 2px solid rgb(17, 16, 16);
+    border-radius: 30px;
+    padding: 5px 12px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0);
+}
+
+
+/*Home*/
+
+.HomeSection{
+    background-color: rgb(49, 47, 47);
+    padding: 100px 15px 0 15px;
+    padding-bottom: 40px;
+}
+
+.HomeSection .full{
+  /*  background-color: red; */
+    min-height: 86vh;
+    align-items: center;
+}
+
+
+.myPhoto{
+    height: 450px;
+    width: 350px;
+    border-radius: 80px;
+}
+
+.HomeSection .homeText {
+    text-align: center;
+}
+
+.HomeSection .homeText p{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+}
+
+.HomeSection .homeText h2{
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0;
+    font-family: 'Train One', cursive;
+}
+
+.HomeSection .homeText h1{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+    margin: 0 0 30px 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.arrow-right:before {
+    width: 25px;
+    height: 1.5px;
+    background: white;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+.arrow-right:after {
+    content: "";
+    display: inline-block ;
+    width: 0;
+    height: 0;
+    border-left: 8px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    vertical-align: middle;
+  
+  }
+
+ .arrow1{
+    padding-left: 50px;
+    color: white;
+    display: inline-block;
+ }
+
+.HomeSection .photo .phot{
+  /*  background-color: blue; */
+    max-width: 450px;
+    display: block;
+    margin: auto;
+
+}
+
+.icon{
+    height: 30px;
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* ABOUT */
+.AboutSection {
+    background-color: gray;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.title{
+    font-size: 30px;
+    color: rgb(250, 84, 112);
+    margin-bottom: 50px;
+    align-items: center;
+    font-family: 'Train One', cursive;
+}
+
+#sdu{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.lineS{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social{
+    margin-left: 15px;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+.MyPhoto2{
+    height: 450px;
+    width: 350px;
+    border-radius: 50px;
+}
+
+/* HOBBY  */
+
+.HobbySection {
+    background-color: rgb(92, 88, 88);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+
+.slidesZ{
+    display: flex;
+    margin: 40px auto;
+    margin-bottom: 300px;
+    display: none;
+}
+
+
+/* The slider: */
+.slider{
+    position: relative;
+    margin: auto;
+    height: 300px;
+    width: 500px;
+}
+.slider .item img {
+    object-fit: cover;
+    width: 800px;
+    height: 500px;
+    margin-left: -150px;
+}
+.slider .previous, .slider .next {
+    /* Adds an icon to the cursor when it is over the button: */
+    cursor: pointer;
+    /* The position of the element is set relative to the borders of the browser: */
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    /* Styling the buttons themselves: */
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    /* Background fading on hover: */
+    transition: 0.6s ease;
+    /* Rounding the borders: */
+    border-radius: 0 3px 3px 0;
+}
+
+.slider .previous {
+    margin-left: -350px;
+    margin-top: 100px;
+}
+
+.item p {
+    font-size: 35px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-right: -100px;
+    margin-top: 100px;
+}
+/* When you hover over the buttons, add the background of the buttons: */
+.slider .previous:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* Slide animation: */
+.slider .item {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    /* Set and change the transparency: */
+    from {
+        opacity: 0.4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+.exitBut{
+    float: right;
+}
+
+#exitB{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: -150px;
+    cursor: pointer;
+}
+
+
+.aboutMyHobby {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about__item{
+	width: 300px;
+    position: relative;
+	background-color: #534f4f;
+    cursor: pointer;
+}
+
+.about__item:hover .about__img {
+	transform: translate3d(-10px, -10px, 0); 
+}
+
+
+.about__item:hover .about__img img {
+    opacity: 0.1;
+}
+
+
+.about__item:hover .about__text {
+	opacity: 1;
+}
+
+.cardImg{
+	height: 200px;
+	width: 290px;
+}
+
+.about__img {
+	background: linear-gradient(to bottom, #726c6b, #000000);
+  transition: transform 0.1s linear;
+}
+
+.about__img img {
+	display: block;
+	transition: opacity 0.1s linear;
+    width: 300px;
+    height: 300px;
+}
+
+.about__text {
+	width: 100%;
+
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	opacity: 0;
+
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 2;
+	transform: translate3d(0, -50%, 0);
+
+  transition: opacity 0.2s linear;	
+}
+
+/* CONTACT ME  */
+.contact-section{
+    background-color: rgb(49, 47, 47);
+    text-align: center;
+    padding: 80px 0 80px;
+    min-height: 85vh;
+}
+
+.lineC{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.contactIn img {
+    width: 45px;
+    height: 45px;
+}
+
+.contact-section .contact__item {
+    flex: 0 0 25.55%;
+    max-width: 25.55%;
+    border: 3px solid black;
+    padding: 5px;
+}
+
+.contact-section .contactIn {
+    padding: 15px 0;
+    border-radius: 5px;
+}
+
+.contact-section .contactIn span {
+    display: block;
+    color: rgb(250, 84, 112);
+    font-weight: 600;
+    margin: 10px 0 5px;
+    text-transform: capitalize;
+}
+
+.contact-section .contactIn p {
+    color: white;
+    font-size: 16px;
+}
+
+/* WRITE */
+.LineW{
+    display: flex;
+}
+
+#btn1{
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: red;
+    background-color: rgb(49, 47, 47);
+}
+
+
+.contact-section .contactForm {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 70px;
+}
+
+.contact-section .inputGroup {
+    padding: 0 10px;
+    flex: 0 0 50%;
+    width: 350px;
+    margin: 0 0 30px;
+    transition: all 0.4s ease;
+    border-radius: 30px;
+}
+
+.contact-section .inputGroup:after{
+    border-radius: 30px;
+}
+
+.contact-section .inputGroup .inputC {
+    height: 30px;
+    display: block;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(15, 15, 15);
+    color: rgb(250, 84, 112);
+   padding: 0 15px;
+   font-size: 16px;
+}
+
+#areaText {
+    margin-left: 50px;
+    height: 130px;
+    overflow-y: hidden;
+    padding-top: 20px;
+    resize: none;
+}
+
+.contact-section .SubmitButton {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+    margin-left: -80px;
+}
+
+
+
+
+
+
+@media(max-width: 1000px){
+
+    .container{
+        width: 100%;
+    }
+
+ .line{
+     display: block;
+     text-align: center;
+ }
+ 
+
+  
+  
+
+ .HeadB{
+     display: block;
+     margin-left: 450px;
+     margin-top: 15px;
+ }
+ 
+
+  .AboutSection {
+      padding-bottom: 30px;
+  }
+
+  .icons {
+      display: flex;
+      justify-content: center;
+      margin: 40px 0;
+  }
+   .icon {
+       margin: 40px 30px;
+   }
+
+   .MyPhoto2 {
+       margin-bottom: 40px;
+   }
+
+    .aboutText {
+        max-width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+     
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Project3</title>
+</head>
+<body onload="load()">
+    
+  <!--Header-->
+  <div class="header">
+    <div class="container">
+          <div class="line">
+               <div class="logo">
+                <a class="logoL" href="index.html">Arnee</a>
+               </div>
+             
+               
+             <div class="headLinks" id="head123">
+               <button class="HeadB"><a href="#aboutSec" class="headLinks">About me</a> </button> 
+               <button class="HeadB"><a href="#hobbySec" class="headLinks">Hobby</a> </button> 
+               <button class="HeadB"><a href="#contactSec" class="headLinks">Contact Me</a> </button> 
+             </div>     
+          </div>
+      </div>
+  </div>
+   <!------------------------------------------------------------------------------------------------------------->
+
+      <!--Home-->
+      <section id="home" class="HomeSection section" onload="load()">
+  </div>
+    <div class="container"> 
+       <div  class="line full">
+         <div id="main" class="homeText">
+         <p class="t1">Konnichiwa!</p>
+         <h2 class="t1">I'm Arnibek</h2>
+         <h1 class="t1">This is My Project3</h1>
+         <a href="#aboutSec" id="aboutMeL" class="arrow1">About me<span id="arrowC" class="arrow-right"></span></a>
+         </div>
+
+    <div id="ACDC" class="icons">
+      <div class="cs"><img class="icon" id="csgo" src="assets/img/icons/CSGO.png" alt=""></div>
+      <div class="dbd"><img class="icon" src="assets/img/icons/dbd.png" alt=""></div>
+      <div class="dota"><img class="icon" src="assets/img/icons/dota.png" alt=""></div>
+      <div class="bns"><img class="icon" src="assets/img/icons/bns.png" alt=""></div>
+      <div class="jpn"><img class="icon" src="assets/img/icons/japan.png" alt=""></div>
+      <div class="ms"><img class="icon" src="assets/img/icons/music.png" alt=""></div>
+    </div>
+
+       <div id="firstPhoto" class="photo">
+         <div class="phot">
+           <img id="mPhot" class="myPhoto" src="assets/img/MyPhoto/myPhoto.JPG">
+         </div>
+       </div>  
+       </div>
+   </div>
+  </section>
+
+  <!--HOME END-->
+
+  <!--About-->
+<section class="AboutSection section" id="aboutSec">
+  <div class="container">
+       <div class="title">
+         <h2>About me</h2>
+    </div>
+
+     <div class="line"> 
+        <div class="aboutPhoto">
+          <div class="aboutImg"><img class="MyPhoto2" src="assets/img/MyPhoto/Photo2.jpg" alt=""></div>
+        </div>
+
+        <div class="aboutRightS">
+     <div class="aboutText">
+        <p>
+          Hey everyone! My name is Arnibek, probably you have seen me as "アルニ(ノ ಠ_ಠ)ノ"　in telegram 
+          (by the way, these characters, and to be more precise - this is katakana which is written my abbreviated name "Arni").
+          I am 18 years old, and I'm studying in <a href="https://sdu.edu.kz" id="sdu">Suleyman Demirel University</a>, 
+          at the Faculty of Engineering and Natural Sciences. 
+          <br><br>
+          Before COVID-19, my main hobby was - volleyball and Computer games. I am playing computer games since I was 3-4 years old, 
+          most likely, this was the reason for choosing this profession. 
+          The computer has literally become a part of my life and always has been.
+          <br><br>
+          My "addition" study is Japanese, I was studying 2-3 years ago. I was pre-intermediate level, But I had to make pause. 
+          now I have continued to learn this language, and I am really happy to learn it. 
+          I doubt I can name a more interesting language than Japanese.
+        </p>
+     </div>   
+   
+     <div class="lineS">
+       <a href="https://www.instagram.com/tanatoszz152/?hl=ru" class="social"><img class="instagram" src="assets/img/icons/inst.png" alt=""></a>
+       <a href="https://vk.com/id596596087" class="social"><img class="VK" src="assets/img/icons/vk.png" alt=""></a>
+       <a href="https://steamcommunity.com/id/ArneeAcc/" class="social"><img class="steam" src="assets/img/icons/steam.png" alt=""></a>
+     </div>
+  
+  </div>
+    </div>
+  </div>
+</section>
+
+ <!--About END-->
+
+  
+ <!--Hobbies-->
+  <section class="HobbySection section" id="hobbySec">
+    <div class="container">
+          <div class="title">
+              <h1 style="color: red;">Hobbies</h1>
+      </div>
+
+  
+ <div class="cards">
+
+ <div class="aboutMyHobby">
+ 
+  <div class="about__item" onclick="changeToHunt()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/h1.jpg">
+       </div>
+       <div class="about__text">Hunting</div>
+     </div>
+ 
+
+ <div class="about__item" onclick="changeToJapan()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/j1.jpg">
+       </div>
+       <div class="about__text">日本語</div>
+     </div>
+  
+
+  <div class="about__item" onclick="changeToSnow()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/s1.jpg">
+       </div>
+       <div class="about__text">SnowBoarding</div>
+     </div>
+</div>
+    
+
+<div class="slidesZ" id="sliderZ">
+  <div class="exitBut" onclick="exitSlidez()"><img id="exitB" src="assets/img/icons/exit.png" alt=""></div>
+  <div class="slider">
+    <!-- The first slide -->
+    <div class="item">
+      <img id="image1" src="assets/img/Hobby/h1.jpg">
+      <p id="sText1">Hunting</p>
+    </div>
+    <!-- The second slide -->
+    <div class="item">
+      <img id="image2" src="assets/img/Hobby/s1.jpg">
+      <p id="sText2">SnowBoarding</p>
+    </div>
+    <!-- The third slide -->
+    <div class="item">
+      <img id="image3" src="assets/img/Hobby/j1.jpg">
+      <p id="sText3">Japanese</p>
+    </div>
+    <!-- The fourth slide-->
+    <div class="item">
+      <img id="image4" src="assets/img/Hobby/j2.JPG">
+      <p id="sText4">日本語</p>
+    </div>
+    <!-- Arrow buttons -->
+    <a class="previous" onclick="previousSlide()">&#10094;</a>
+    <a class="next" onclick="nextSlide()">&#10095;</a>
+  </div>
+</div>
+
+
+<div class="aboutMyHobby">
+  <div class="about__item" onclick="changeToVolley()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/v1.jpg">
+       </div>
+       <div class="about__text">volleyball</div>
+     </div>
+ 
+
+ <div class="about__item" onclick="changeToCS()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/c1.png">
+       </div>
+       <div class="about__text">CS:GO</div>
+     </div>
+  
+
+  <div class="about__item" onclick="changeToDBD()">
+    <div class="about__img">
+      <img class="cardImg" src="assets/img/Hobby/d1.jpg">
+       </div>
+       <div class="about__text">Dead By Daylight</div>
+     </div>
+</div>
+</div>
+    </div>
+  </section>
+ <!--Hobby end-->
+
+
+  <!-- Cntact ME-->
+ <section class="contact-section" id="conSection">
+   <div class="container">
+        <div class="title">
+          <h1>Contact me</h1>
+        </div>
+
+  <!--CONTACT DISCORD-->
+    <div class="lineC"  id="formA">
+      <div class="contact__item" id="contactSec">
+        <div class="contactIn">
+          <img src="assets/img/icons/phone.png" alt="">
+          <span>Phone</span>
+          <p>+7(771)-364-49-44</p>
+      </div>
+        </div>
+     
+     
+      <div class="contact__item">
+        <div class="contactIn">
+                <img src="assets/img/icons/dis.png" alt="">
+                <span>Discord</span>
+                <p>Tanatoszz#7136</p>
+        </div>
+  </div>
+
+    <div class="contact__item">
+      <div class="contactIn">
+        <img src="assets/img/icons/mail.png" alt="">
+        <span>Mail</span>
+        <p>200107080@gmail.com</p>
+    </div>
+      </div>
+    </div>
+
+
+    <!--Email me-->
+     <div class="LineW">
+        <div class="contactForm">
+           <form  id="formA2">
+             <div class="LineW">
+                      <div class="UrWrite">
+                        <div class="inputGroup"><input type="text" placeholder="Name" class="inputC"></div>
+                        <div class="inputGroup"><input type="text" placeholder="Email" class="inputC"></div>
+                        <div class="inputGroup"><input type="text" placeholder="Subject" class="inputC"></div>
+                      </div>                         
+                <div class="inputGroup">
+                  <textarea id="areaText" class="inputC" placeholder="Write your message"></textarea> 
+                </div> 
+            </div>   
+                 
+       <div class="LineW">
+         <div class="SubmitButton">
+           <button type="submit" id="btn1">Send</button>
+         </div>
+       </div>     
+           </form>
+        </div>
+     </div>
+
+
+   </div>
+ </section>
+ 
+ 
+
+
+
+
+
+  <script src="assets/JS/scrypt.js"></script>
+</body>
+</html>
